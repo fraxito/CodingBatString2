@@ -1,12 +1,6 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package codingbatstrings2;
-
-/**
- *
- * @author xp
+/*
+ * Autor: Sote
  */
 public class CatDogJaimeSotelo {
     public boolean catDog (String str) {
@@ -16,9 +10,7 @@ public class CatDogJaimeSotelo {
      }
   if (count == 2){
    return true;
-   }
+    }
   return false;
-}
-  
-
+    } 
 }
