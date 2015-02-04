@@ -13,7 +13,7 @@ public class XyzThereYoelCano {
     public boolean xyzThere(String str) {
         if(str.contains("xyz")){
             if(str.contains(".xyz")){
-                return false;
+                    return false; 
             }
             else{
                 return true;
