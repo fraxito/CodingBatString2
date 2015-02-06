@@ -8,8 +8,32 @@ package codingbatstrings2;
 
 /**
  *
- * @author xp
+ * @author dlopezconde
  */
 public class MixStringDanielLopez {
+   public String mixString(String a, String b) {
+        String res="";
+    int i;
+    for(i=0;i<a.length() && i<b.length();i++)
+     {
+           res=res+a.charAt(i);
+           res=res+b.charAt(i);
+    }
+    if(a.length()<b.length())
+    {
+            res=res+b.substring(i);
+    }
+    else{
+        res=res+a.substring(i);
+    }
+    return res;
+
+     
+
+  
+       
+  
+}
+
     
 }
