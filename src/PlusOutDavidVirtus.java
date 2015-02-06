@@ -3,12 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package codingbatstrings2;
 
 /**
  *
- * @author luisfeliz
+ * @author Virtus
  */
-public class StartOut {
+public class PlusOutDavidVirtus {
     
 }
