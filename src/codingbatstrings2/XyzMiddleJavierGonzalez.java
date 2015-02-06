@@ -9,7 +9,7 @@ package codingbatstrings2;
  *
  * @author javier
  */
-public class XyzMiddleJavierGonzález {
+public class XyzMiddleJavierGonzalez {
     public boolean xyzMiddle(String str) {
   
         int letras = str.length();
