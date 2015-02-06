@@ -20,13 +20,13 @@ public class BobThereJesusPeña_TEST extends javax.swing.JFrame {
         BobThereJesusPeña prueba = new BobThereJesusPeña();
         
         String prueba1="abcbob";
-        if (prueba.BobThereJesusPeña(prueba1)) {jLabel1.setText("PRUEBA OK");}else {jLabel1.setText("ERROR!");}
+        if (prueba.bobThere(prueba1)) {jLabel1.setText("PRUEBA OK");}else {jLabel1.setText("ERROR!");}
         
         String prueba2="b9b";
-        if (prueba.BobThereJesusPeña(prueba2)) {jLabel2.setText("PRUEBA OK");}else {jLabel2.setText("ERROR!");}
+        if (prueba.bobThere(prueba2)) {jLabel2.setText("PRUEBA OK");}else {jLabel2.setText("ERROR!");}
         
         String prueba3="bac";
-        if (prueba.BobThereJesusPeña(prueba3)) {jLabel3.setText("PRUEBA OK");}else {jLabel2.setText("ERROR!");}
+        if (prueba.bobThere(prueba3)) {jLabel3.setText("PRUEBA OK");}else {jLabel3.setText("ERROR!");}
     }
 
     /**
