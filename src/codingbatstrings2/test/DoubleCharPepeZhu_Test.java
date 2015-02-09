@@ -5,30 +5,52 @@
  */
 package codingbatstrings2.test;
 
-import codingbatstrings2.BobThereJesusPeña;
+import codingbatstrings2.DoubleCharPepeZhu;
+
 /**
  *
  * @author xp
  */
-public class BobThereJesusPeña_TEST extends javax.swing.JFrame {
+public class DoubleCharPepeZhu_Test extends javax.swing.JFrame {
 
     /**
-     * Creates new form BobThereJesusPeña_TEST
+     * Creates new form DoubleCharPepeZhu_Test
      */
-    public BobThereJesusPeña_TEST() {
+    public DoubleCharPepeZhu_Test() {
+    
         initComponents();
-        BobThereJesusPeña prueba = new BobThereJesusPeña();
-        
-        String prueba1="abcbob";
-        if (prueba.bobThere(prueba1)) {jLabel1.setText("PRUEBA OK");}else {jLabel1.setText("ERROR!");}
-        
-        String prueba2="b9b";
-        if (prueba.bobThere(prueba2)) {jLabel2.setText("PRUEBA OK");}else {jLabel2.setText("ERROR!");}
-        
-        String prueba3="bac";
-        if (prueba.bobThere(prueba3)) {jLabel3.setText("PRUEBA OK");}else {jLabel3.setText("ERROR!");}
+       
+    DoubleCharPepeZhu test = new DoubleCharPepeZhu();
+    
+    String test1 = ("The");
+    String test2 = ("AAbb");
+    String test3 = ("Hi-There");
+    
+  
+      
+    if ("TThhee".equals(test.doubleChar(test1))){
+    
+         jLabel1.setText("Correcto");
+         
     }
 
+       if ("AAAAbbbb".equals(test.doubleChar(test2))){
+    
+         jLabel2.setText("Correcto");
+         
+    }
+
+   if ( "HHii--TThheerree".equals(test.doubleChar(test3))){
+    
+         jLabel3.setText("Correcto");
+         
+   }
+    
+    
+    }
+    
+    
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -44,34 +66,40 @@ public class BobThereJesusPeña_TEST extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("abcbob");
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        jLabel1.setText("Prueba 1");
 
-        jLabel2.setText("b9b");
+        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        jLabel2.setText("Prueba 2");
 
-        jLabel3.setText("bac");
+        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        jLabel3.setText("Prueba 3");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 57, Short.MAX_VALUE)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(333, Short.MAX_VALUE))
+                .addGap(30, 30, 30)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel1))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(30, Short.MAX_VALUE)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 322, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(48, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(7, 7, 7)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(192, Short.MAX_VALUE))
+                .addGap(32, 32, 32)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 52, Short.MAX_VALUE)
+                .addComponent(jLabel2)
+                .addGap(50, 50, 50)
+                .addComponent(jLabel3)
+                .addGap(34, 34, 34))
         );
 
         pack();
@@ -94,20 +122,20 @@ public class BobThereJesusPeña_TEST extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(BobThereJesusPeña_TEST.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DoubleCharPepeZhu_Test.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(BobThereJesusPeña_TEST.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DoubleCharPepeZhu_Test.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(BobThereJesusPeña_TEST.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DoubleCharPepeZhu_Test.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(BobThereJesusPeña_TEST.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DoubleCharPepeZhu_Test.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new BobThereJesusPeña_TEST().setVisible(true);
+                new DoubleCharPepeZhu_Test().setVisible(true);
             }
         });
     }
@@ -117,4 +145,6 @@ public class BobThereJesusPeña_TEST extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
+
+  
 }

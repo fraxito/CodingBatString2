@@ -9,10 +9,15 @@ package codingbatstrings2;
  * @author xp
  */
 public class GetSandwich {
+     
     public String getSandwich(String str) {
+        
         String sandwich = "bread";
-        
-        
+        String jamon = "jam";
+        sandwich.charAt(0);
+        sandwich.charAt(4);
+        return str = jamon;
+          
         
     }
 
