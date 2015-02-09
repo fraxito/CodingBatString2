@@ -12,11 +12,10 @@ public class GetSandwich {
      
     public String getSandwich(String str) {
         
-        String sandwich = "bread";
-        String jamon = "jam";
-        sandwich.charAt(0);
-        sandwich.charAt(4);
-        return str = jamon;
+        if(str.indexOf("bread")==str.lastIndexOf("bread")){
+            return "";
+        }
+        return(str.substring(str.indexOf("bread")+5,str.lastIndexOf("bread")));
           
         
     }
