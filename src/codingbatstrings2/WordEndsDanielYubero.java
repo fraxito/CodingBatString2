@@ -24,5 +24,9 @@ public class WordEndsDanielYubero {
         }
         return resultado;
     }
+
+    public String wordEnds(String str1) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
