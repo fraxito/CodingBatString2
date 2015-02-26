@@ -20,6 +20,16 @@ public class BobThere_JorgeAndres_TEST extends javax.swing.JFrame {
         initComponents();
     }
 
+    private boolean test(String str) {
+        int len = str.length();
+        for (int i = 0; i < len - 2; i++) {
+            if (str.charAt(i) == 'b' && str.charAt(i + 2) == 'b') {
+                return true;
+            }
+        }
+        return false;
+    }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -43,9 +53,12 @@ public class BobThere_JorgeAndres_TEST extends javax.swing.JFrame {
             }
         });
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
+        jTextArea1.setColumns(15);
+        jTextArea1.setFont(new java.awt.Font("Tempus Sans ITC", 0, 24)); // NOI18N
+        jTextArea1.setRows(1);
         jScrollPane1.setViewportView(jTextArea1);
+
+        jLabel.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -63,11 +76,11 @@ public class BobThere_JorgeAndres_TEST extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 54, Short.MAX_VALUE)
+                .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 55, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -77,9 +90,9 @@ public class BobThere_JorgeAndres_TEST extends javax.swing.JFrame {
     private void jButton1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MousePressed
         String str = jTextArea1.getText();
         BobThere_JorgeAndres clase = new BobThere_JorgeAndres();
-        if(clase.bobThere(str) == true){
+        if (clase.bobThere(str) == test(str)) {
             jLabel.setText("Bien");
-        }else{
+        } else {
             jLabel.setText("Mal");
         }
     }//GEN-LAST:event_jButton1MousePressed
@@ -125,4 +138,5 @@ public class BobThere_JorgeAndres_TEST extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
     // End of variables declaration//GEN-END:variables
+
 }
